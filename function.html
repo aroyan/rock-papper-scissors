@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions - The Odin Project</title>
+</head>
+<body>
+    
+    <script>
+
+        function add7(num){
+            console.log(num + 7)
+        }
+
+        add7(10);
+
+        function multiply(num1, num2){
+            let hasil = num1 * num2
+            return console.log(hasil)
+        }
+
+
+        multiply(12, 12);
+
+        //Make a function to return last character of strings 
+
+        function lastLetter(typeHere){
+            //typeHere is parameter
+            //JS Index start from 0 so to get last index is -1
+
+            let lastChar = typeHere.charAt(typeHere.length-1);
+            console.log("Huruf terakhir adalah : " + lastChar);
+
+        }
+
+
+        lastLetter("Hello Bakti");
+        //"Hello Bakti" is argument
+
+
+        //Make a function to retrun only the first character is Uppercase
+
+        function capitalize(capilatizeString){
+            let kapital = capilatizeString;
+            let first = kapital.charAt(0);
+            first = first.toUpperCase()
+            let lowerCase =  capilatizeString.slice(1);
+            lowerCase = lowerCase.toLowerCase();
+            console.log(first + lowerCase);
+            
+        }
+
+        //Replace huruf awal kapital dengan first dan convert kapital to lowercase
+        //  terus baru digabung
+
+        capitalize("ubah jadi HURUF kapital");
+        capitalize("HELLLLOOOOOO THIS IS WOULD BE AN LOWERCASE EXEPT THE FIRST LETTER");
+
+
+        //Function to input data mahasiswa
+
+        function dataMahasiswa(nim, namaMahasiswa, alamatMahasiswa){
+
+            console.log("NIM : " + nim)
+            console.log("Nama : " + namaMahasiswa)
+            console.log("Alamat : " + alamatMahasiswa)
+
+        }
+
+
+        dataMahasiswa("2010010293", "Aroyan Bakti S", "Malang - Jawa Timur")
+        dataMahasiswa("2010012933", "Salfa Rizqi R", "Malang - Jawa Timur")
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
