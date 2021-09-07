@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>DOM Manipulation</li>
+            <li>ReactJS</li>
+            <li>SCSS</li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        const tambah = document.querySelector("body");
+        const tambahParagraf = document.createElement("p");
+        const tambahParagrafIsi = document.createTextNode("Hey, I'm red");
+
+        tambahParagraf.style.color = "red";
+
+        tambahParagraf.appendChild(tambahParagrafIsi);
+        tambah.append(tambahParagraf);
+
+
+        const tambahH3 = document.createElement("h3");
+        const tambahH3Isi = document.createTextNode("Hey, I'm Blue");
+
+        tambahH3.style = "color: blue";
+
+        tambahH3.appendChild(tambahH3Isi);
+        tambah.append(tambahH3)
+
+
+
+        //Create Div
+        const tambahDiv = document.createElement("div");
+        //Styling div
+        tambahDiv.style = "background: pink; color: yellow; height: 200px; border: black 1px solid; padding-left: 20px;"
+        //Create h1
+        const tambahH1 = document.createElement("h1");
+        //Create Text to h1
+        const tambahH1Isi = document.createTextNode("I'm in a DIV");
+        //Append Value of tambahH1Isi to tambahH1
+        tambahH1.appendChild(tambahH1Isi);
+        //Append value of tambahH1 to child of tambahDiv
+        tambahDiv.appendChild(tambahH1);
+        //Create Paragraf 
+        const tambahParagraf2 = document.createElement("p");
+        //Add text to Paragraf
+        const tambahParagrafIsi2 = document.createTextNode("Me too");
+        //Append tambahParagraf2Isi to tambahParagraf2
+        tambahParagraf2.appendChild(tambahParagrafIsi2);
+        //Append to Div
+        tambahDiv.appendChild(tambahParagraf2);
+
+        //Append H1 and Paragraf
+
+        tambahH1.append(tambahParagraf2);
+
+        //Append Div to body
+        tambah.append(tambahDiv);
+
+
+
+
+
+
+        // let todo = document.querySelector("#todo--list");
+        // let newTodo = document.createElement("li");
+        // let newTodoAdd = document.createTextNode("Angular");
+
+        // newTodo.appendChild(newTodoAdd);
+
+        // todo.append(newTodo);
+
+
+        // const div = document.createElement("div");
+        // div.style.color = 'blue';
+        // div.style.cssText = 'color: blue; background: white';
+        // div.setAttribute('style', 'color: blue; background: white');
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
