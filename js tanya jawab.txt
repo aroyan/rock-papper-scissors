@@ -1,7 +1,0 @@
-let jawab = prompt("Whats the name official JS?");
-if (jawab == "ecmascript"){
-	alert("True")
-} else
-{
-	alert("Wrong")
-}

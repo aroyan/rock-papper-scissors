@@ -1,59 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FizzBuzz</title>
-</head>
-<body>
-    
-
-
+  </head>
+  <body>
     <script>
+      let inputNumber = prompt("Masukkan nomor : ");
 
-
-        //let inputNumber = prompt("Masukkan nomor : ");
-        
-       /* for(i=1; inputNumber>= i; i++){
-            //Putting FizzBuzz first so it'll be print out first when this statement it's true
-            if(i%3 == 0 && i%5 == 0){
-                console.log("FizzBuzz");
-            } 
-            else if(i%3 == 0){
-                console.log("Fizz");
-            }
-            else if(i%5 == 0){
-                console.log("Buzz");
-            }
-            else
-                console.log(i);
-        }
-        */
-
-
-        //Dealing with errors
-
-        var a = 2;
-        var b = 3;
-
-
-        function hello(){
-            return c;
-        }
-
-        function print(){
-            hello()
-        }
-
-
-        print();
-
-
-        
-
+      for (i = 1; inputNumber >= i; i++) {
+        //Putting FizzBuzz first so it'll be print out first when this statement it's true
+        if (i % 3 == 0 && i % 5 == 0) {
+          console.log("FizzBuzz");
+        } else if (i % 3 == 0) {
+          console.log("Fizz");
+        } else if (i % 5 == 0) {
+          console.log("Buzz");
+        } else console.log(i);
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
